@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html-2-Pdf</title>
+    <style>
+      th,
+      td {
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="invoice" style="text-align: center">
+      <h1>Converting HTML Page to PDF</h1>
+      <h3><u>Employees Details:</u></h3>
+      <table rules="all" border="2" style="margin: auto">
+        <thead>
+          <tr>
+            <th>Sl NO:</th>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Salary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Dhanush</td>
+            <td>Software Engineer</td>
+            <td>60000/-</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Lokesh</td>
+            <td>Software Developer</td>
+            <td>70000/-</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Ramesh</td>
+            <td>Software Engineer (Tester)</td>
+            <td>40000/-</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="width:500px;margin:auto;">
+          <h3 style="text-align:left;margin-bottom: 0;"><u>Software Engineer:</u></h3>
+          <p style="text-align:justify;">Software engineering is the systematic application of engineering approaches to the development of software. A software engineer is a person who applies the principles of software engineering to design, develop, maintain, test, and evaluate computer software</p>
+      </div>
+      <button id="btn" onClick="generatePDF()" style="margin-top: 10px;color:white; padding: 5px 35px;background-color: green;">PDF</button>
+    </div>
+   <script src="./index.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  </body>
+</html>
